@@ -1,0 +1,249 @@
+aid: onafriq
+name: Onafriq
+description: >-
+  Onafriq (formerly MFS Africa) is a pan-African digital payments network
+  headquartered in London with operating entities across Mauritius, Ghana,
+  Nigeria, Tanzania, Rwanda, Uganda, the DRC, and the UK. Founded by CEO Dare
+  Okoudjou, Onafriq operates what it calls "Africa's largest digital payments
+  gateway" — a network of networks connecting roughly one billion mobile money
+  wallets and 500 million bank accounts across 40+ African countries through
+  2,000+ cross-border corridors. The platform exposes a REST API surface for
+  partners including Money Transfer Organizations (MTOs), Mobile Network
+  Operators (MNOs), banks, NGOs, governments, and enterprises. Core developer
+  products include Async Payouts (the recommended path for MTOs and bulk
+  disbursement partners, with webhook-based status updates), Sync Payouts
+  (custom-built for MNOs requiring synchronous responses), Sync Bank Transfers,
+  Collections APIs (Payins) for receiving funds from cards, cash agents, and
+  mobile wallets, a Contacts API for managing payer/payee records, a Get Rates
+  API for daily foreign exchange rates, and Async Webhooks for Instant Payment
+  Notifications. Two distinct portal endpoints serve domestic
+  (api.mfsafrica.com/api) and cross-border (mfsafrica.beyonicpartners.com/api)
+  workloads. Beyond cross-border remittance and disbursement, Onafriq operates
+  Baxi — a Nigerian agent banking network of 460,000+ agents across all 36
+  states with its own Virtual Account, Fingerprint, and Account Debit APIs —
+  plus card issuance and processing for physical/virtual prepaid programs and
+  multi-currency treasury services. Onafriq has raised $200M+ in Series C
+  funding from Vitruvian Partners, AXA Investment Managers, and Goodwell, and
+  holds 16 payment licenses including FSC (Mauritius) and FCA (UK) authorization.
+  The legacy MFS Africa developer hub (developer.mfsafrica.com) remains the
+  canonical reference documentation, with a newer developers.onafriq.com portal
+  reflecting the post-rebrand identity.
+type: Index
+position: Provider
+access: 3rd-Party
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Payments
+  - Mobile Money
+  - Remittance
+  - Cross-Border Payments
+  - Disbursements
+  - Payouts
+  - Collections
+  - Bank Transfers
+  - Card Issuance
+  - Agent Banking
+  - Treasury
+  - Foreign Exchange
+  - Webhooks
+  - Africa
+  - Fintech
+  - Financial Services
+  - MFS Africa
+  - Onafriq
+  - Baxi
+url: https://raw.githubusercontent.com/api-evangelist/onafriq/refs/heads/main/apis.yml
+created: '2026-05-24'
+modified: '2026-05-24'
+specificationVersion: '0.20'
+apis:
+  - aid: onafriq:onafriq-async-payouts-api
+    name: Onafriq Async Payouts API
+    description: >-
+      Asynchronous payouts designed for Money Transfer Organizations (MTOs)
+      and disbursement partners. Partners create payments to mobile money
+      wallets, cash pickup points, and bank accounts; results are delivered
+      via webhook as the transaction state updates. REST/JSON interface.
+    humanURL: https://developer.mfsafrica.com/docs/async-payments-api
+    tags:
+      - Payments
+      - Payouts
+      - Disbursements
+      - Mobile Money
+      - Remittance
+      - Webhooks
+    properties:
+      - type: Documentation
+        url: https://developer.mfsafrica.com/docs/async-payments-api
+      - type: Documentation
+        url: https://developers.onafriq.com/docs/remittance-apis-v1/ltkyfhltgh35s-async-api-methods
+  - aid: onafriq:onafriq-sync-payouts-api
+    name: Onafriq Sync Payouts API
+    description: >-
+      Synchronous payouts custom-built for Mobile Network Operators (MNOs)
+      and partners that require synchronous responses. Transaction results
+      are returned within seconds as a response to the trans_com call.
+    humanURL: https://developer.mfsafrica.com/docs/sync-disbursements-api
+    tags:
+      - Payments
+      - Payouts
+      - Mobile Money
+      - MNO
+    properties:
+      - type: Documentation
+        url: https://developer.mfsafrica.com/docs/sync-disbursements-api
+  - aid: onafriq:onafriq-sync-bank-transfers-api
+    name: Onafriq Sync Bank Transfers API
+    description: >-
+      Synchronous bank transfer API for sending funds directly to bank
+      accounts across the Onafriq network with real-time response semantics.
+    humanURL: https://developer.mfsafrica.com/docs/web-service-summary-4
+    tags:
+      - Payments
+      - Bank Transfers
+      - Disbursements
+    properties:
+      - type: Documentation
+        url: https://developer.mfsafrica.com/docs/web-service-summary-4
+  - aid: onafriq:onafriq-collections-api
+    name: Onafriq Collections API
+    description: >-
+      Collections (Payins) API for receiving funds from customers across
+      cards, cash agent networks, and mobile money wallets. Supports
+      merchant-pull and subscriber-initiated models with real-time
+      transaction confirmation and USD settlement to bank accounts.
+    humanURL: https://developer.mfsafrica.com/docs/overview-5
+    tags:
+      - Payments
+      - Collections
+      - Payins
+      - Mobile Money
+      - Cards
+    properties:
+      - type: Documentation
+        url: https://developer.mfsafrica.com/docs/overview-5
+  - aid: onafriq:onafriq-rates-api
+    name: Onafriq Get Rates API
+    description: >-
+      Programmatic access to daily foreign-exchange rates used by the
+      Onafriq network so partners can price cross-border transactions and
+      perform pre-trade quoting before submitting a payout.
+    humanURL: https://developer.mfsafrica.com/docs/combined-api-information
+    tags:
+      - Foreign Exchange
+      - Rates
+      - Cross-Border Payments
+    properties:
+      - type: Documentation
+        url: https://developer.mfsafrica.com/docs/combined-api-information
+  - aid: onafriq:onafriq-webhooks-api
+    name: Onafriq Async Webhooks API
+    description: >-
+      Instant Payment Notification (IPN) webhooks delivered asynchronously
+      to partner endpoints as transaction state changes — used in
+      combination with the Async Payouts and Async Collections flows.
+    humanURL: https://developer.mfsafrica.com/docs/combined-api-information
+    tags:
+      - Webhooks
+      - Notifications
+      - Payments
+      - Eventing
+    properties:
+      - type: Documentation
+        url: https://developer.mfsafrica.com/docs/combined-api-information
+  - aid: onafriq:onafriq-contacts-api
+    name: Onafriq Contacts API
+    description: >-
+      Contacts API for adding and retrieving customer (payer / payee)
+      records used across Payins, Payouts, and reconciliation workflows
+      on the Enterprise Platform.
+    humanURL: https://developer.mfsafrica.com/docs/api-overview
+    tags:
+      - Contacts
+      - Customers
+      - Identity
+    properties:
+      - type: Documentation
+        url: https://developer.mfsafrica.com/docs/api-overview
+  - aid: onafriq:baxi-agent-banking-api
+    name: Baxi Agent Banking API
+    description: >-
+      Onafriq's Nigerian agent-banking platform (Baxi) exposes Virtual
+      Account, Fingerprint (POS biometric activation), and Account Debit
+      (cardless cash-out) APIs spanning a 460,000+ agent network across
+      all 36 Nigerian states. Supports bill payment, airtime/data, cable
+      TV, and e-Naira exchange.
+    humanURL: https://onafriq.com/services/agent-banking
+    tags:
+      - Agent Banking
+      - Cash-In Cash-Out
+      - Bill Payment
+      - Airtime
+      - Nigeria
+      - Baxi
+    properties:
+      - type: Documentation
+        url: https://onafriq.com/services/agent-banking
+  - aid: onafriq:onafriq-card-issuance-api
+    name: Onafriq Card Issuance API
+    description: >-
+      Card issuance and processing platform for partners launching
+      physical and virtual prepaid card programs, including Visa virtual
+      card creation, lifecycle management, and globally accepted spend.
+    humanURL: https://onafriq.com/services/card-issuance-and-processing
+    tags:
+      - Cards
+      - Card Issuance
+      - Prepaid
+      - Virtual Cards
+    properties:
+      - type: Documentation
+        url: https://onafriq.com/services/card-issuance-and-processing
+common:
+  - type: Website
+    url: https://onafriq.com
+  - type: About
+    url: https://onafriq.com/about
+  - type: Features
+    url: https://onafriq.com/features
+  - type: Portal
+    url: https://developers.onafriq.com
+  - type: Documentation
+    url: https://developer.mfsafrica.com
+  - type: Documentation
+    url: https://developer.mfsafrica.com/docs/api-overview
+  - type: Documentation
+    url: https://developer.mfsafrica.com/docs/combined-api-information
+  - type: Documentation
+    url: https://developer.mfsafrica.com/docs/api-endpoints
+  - type: Documentation
+    url: https://developer.mfsafrica.com/docs/communication-protocols
+  - type: Documentation
+    url: https://developer.mfsafrica.com/docs/schedule-a-response-codes-2
+  - type: Collections
+    url: https://onafriq.com/services/collections
+  - type: Disbursements
+    url: https://onafriq.com/services/disbursements
+  - type: CardIssuance
+    url: https://onafriq.com/services/card-issuance-and-processing
+  - type: AgentBanking
+    url: https://onafriq.com/services/agent-banking
+  - type: TreasuryServices
+    url: https://onafriq.com/services/treasury-services
+  - type: Blog
+    url: https://onafriq.com/insights
+  - type: Careers
+    url: https://onafriq.com/careers
+  - type: Contact
+    url: https://onafriq.com/contact
+  - type: LegacyBrand
+    url: https://mfsafrica.com
+  - type: GitHubOrganization
+    url: https://github.com/mfsafrica
+  - type: Twitter
+    url: https://twitter.com/Onafriq
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/onafriq
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
