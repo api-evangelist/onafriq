@@ -1,0 +1,14 @@
+generated: '2026-07-11'
+method: searched
+probe: true
+source: https://security.onafriq.com/
+url: https://security.onafriq.com/
+certifications:
+- ISO 27001
+- PCI DSS
+evidence:
+- source: https://security.onafriq.com/
+  keywords:
+  - iso/iec 27001
+  - pci dss
+  - trust center

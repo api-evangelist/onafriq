@@ -200,6 +200,10 @@ apis:
       - type: Documentation
         url: https://onafriq.com/services/card-issuance-and-processing
 common:
+  - type: TrustCenter
+    url: security/onafriq-trust-center.yml
+  - type: DomainSecurity
+    url: security/onafriq-domain-security.yml
   - type: Website
     url: https://onafriq.com
   - type: About
