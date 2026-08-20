@@ -50,6 +50,26 @@ tags:
   - Cross-Border Payments
   - Disbursements
   - Payouts
+  - Collection
+  - Bank Transfers
+  - Card Issuance
+  - Agent Banking
+  - Treasury
+  - Foreign Exchange
+  - Webhook
+  - Africa
+  - Fintech
+  - Financial-Services
+  - MFS Africa
+  - Onafriq
+  - Baxi
+tags_raw:
+  - Payments
+  - Mobile Money
+  - Remittance
+  - Cross-Border Payments
+  - Disbursements
+  - Payouts
   - Collections
   - Bank Transfers
   - Card Issuance
@@ -77,6 +97,13 @@ apis:
       via webhook as the transaction state updates. REST/JSON interface.
     humanURL: https://developer.mfsafrica.com/docs/async-payments-api
     tags:
+      - Payments
+      - Payouts
+      - Disbursements
+      - Mobile Money
+      - Remittance
+      - Webhook
+    tags_raw:
       - Payments
       - Payouts
       - Disbursements
@@ -126,6 +153,12 @@ apis:
     humanURL: https://developer.mfsafrica.com/docs/overview-5
     tags:
       - Payments
+      - Collection
+      - Payins
+      - Mobile Money
+      - Cards
+    tags_raw:
+      - Payments
       - Collections
       - Payins
       - Mobile Money
@@ -155,6 +188,11 @@ apis:
       combination with the Async Payouts and Async Collections flows.
     humanURL: https://developer.mfsafrica.com/docs/combined-api-information
     tags:
+      - Webhook
+      - Notification
+      - Payments
+      - Eventing
+    tags_raw:
       - Webhooks
       - Notifications
       - Payments
@@ -186,6 +224,13 @@ apis:
       TV, and e-Naira exchange.
     humanURL: https://onafriq.com/services/agent-banking
     tags:
+      - Agent Banking
+      - Cash-In Cash-Out
+      - Bill Payments
+      - Airtime
+      - Nigeria
+      - Baxi
+    tags_raw:
       - Agent Banking
       - Cash-In Cash-Out
       - Bill Payment
