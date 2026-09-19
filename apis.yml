@@ -57,7 +57,7 @@ image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/onafriq.pn
 tags:
   - Payments
   - Mobile Money
-  - Remittance
+  - Remittances
   - Cross-Border Payments
   - Disbursements
   - Payouts
@@ -112,7 +112,7 @@ apis:
       - Payouts
       - Disbursements
       - Mobile Money
-      - Remittance
+      - Remittances
       - Webhook
     tags_raw:
       - Payments
@@ -165,7 +165,7 @@ apis:
     tags:
       - Payments
       - Collection
-      - Payins
+      - Pay-In
       - Mobile Money
       - Cards
     tags_raw:
