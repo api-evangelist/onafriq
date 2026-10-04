@@ -70,7 +70,7 @@ tags:
   - Webhook
   - Africa
   - Fintech
-  - Financial-Services
+  - Financial Services
   - MFS Africa
   - Onafriq
   - Baxi
@@ -94,6 +94,7 @@ tags_raw:
   - MFS Africa
   - Onafriq
   - Baxi
+  - Financial-Services
 url: https://raw.githubusercontent.com/api-evangelist/onafriq/refs/heads/main/apis.yml
 created: '2026-05-24'
 modified: '2026-05-24'
