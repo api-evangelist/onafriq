@@ -1,4 +1,4 @@
-# onafriq
+# Onafriq
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,14 +64,95 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Onafriq (formerly MFS Africa) — pan-African digital payments network.
+Onafriq (formerly MFS Africa) is a pan-African digital payments network headquartered in London with operating entities across Mauritius, Ghana, Nigeria, Tanzania, Rwanda, Uganda, the DRC, and the UK. Founded by CEO Dare Okoudjou, Onafriq operates what it calls "Africa's largest digital payments gateway" — a network of networks connecting roughly one billion mobile money wallets and 500 million bank accounts across 40+ African countries through 2,000+ cross-border corridors. The platform exposes a REST API surface for partners including Money Transfer Organizations (MTOs), Mobile Network Operators (MNOs), banks, NGOs, governments, and enterprises. Core developer products include Async Payouts (the recommended path for MTOs and bulk disbursement partners, with webhook-based status updates), Sync Payouts (custom-built for MNOs requiring synchronous responses), Sync Bank Transfers, Collections APIs (Payins) for receiving funds from cards, cash agents, and mobile wallets, a Contacts API for managing payer/payee records, a Get Rates API for daily foreign exchange rates, and Async Webhooks for Instant Payment Notifications. Two distinct portal endpoints serve domestic (api.mfsafrica.com/api) and cross-border (mfsafrica.beyonicpartners.com/api) workloads. Beyond cross-border remittance and disbursement, Onafriq operates Baxi — a Nigerian agent banking network of 460,000+ agents across all 36 states with its own Virtual Account, Fingerprint, and Account Debit APIs — plus card issuance and processing for physical/virtual prepaid programs and multi-currency treasury services. Onafriq has raised $200M+ in Series C funding from Vitruvian Partners, AXA Investment Managers, and Goodwell, and holds 16 payment licenses including FSC (Mauritius) and FCA (UK) authorization. The legacy MFS Africa developer hub (developer.mfsafrica.com) remains the canonical reference documentation, with a newer developers.onafriq.com portal reflecting the post-rebrand identity.
 
-Africa's largest mobile money gateway: ~1B wallets, 500M bank accounts,
-40+ countries, 2,000+ cross-border corridors. APIs cover Async/Sync
-Payouts, Sync Bank Transfers, Collections, Rates, Webhooks, Contacts,
-Baxi Agent Banking (Nigeria), and Card Issuance.
+**Areas:** Payments · Mobile Money · Remittances · Cross-Border Payments · Disbursements · Payouts · Collection · Bank Transfers · Card Issuance · Agent Banking · Treasury · Foreign Exchange
 
-- Website: https://onafriq.com
-- Developer portal: https://developers.onafriq.com
-- Legacy MFS Africa dev hub: https://developer.mfsafrica.com
-- Legacy GitHub org: https://github.com/mfsafrica
+## Onafriq on APIs.io
+
+Everything profiled for Onafriq is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/onafriq/](https://apis.io/providers/onafriq/)** — or go straight to one of the APIs or properties below.
+
+### APIs (9)
+
+- [Onafriq Async Payouts API](https://apis.io/apis/onafriq/onafriq-async-payouts-api/) — Asynchronous payouts designed for Money Transfer Organizations (MTOs) and disbursement partners. Partners create payments to mobile money wallets, cash…
+- [Onafriq Sync Payouts API](https://apis.io/apis/onafriq/onafriq-sync-payouts-api/) — Synchronous payouts custom-built for Mobile Network Operators (MNOs) and partners that require synchronous responses. Transaction results are returned…
+- [Onafriq Sync Bank Transfers API](https://apis.io/apis/onafriq/onafriq-sync-bank-transfers-api/) — Synchronous bank transfer API for sending funds directly to bank accounts across the Onafriq network with real-time response semantics.
+- [Onafriq Collections API](https://apis.io/apis/onafriq/onafriq-collections-api/) — Collections (Payins) API for receiving funds from customers across cards, cash agent networks, and mobile money wallets. Supports merchant-pull and…
+- [Onafriq Get Rates API](https://apis.io/apis/onafriq/onafriq-rates-api/) — Programmatic access to daily foreign-exchange rates used by the Onafriq network so partners can price cross-border transactions and perform pre-trade…
+- [Onafriq Async Webhooks API](https://apis.io/apis/onafriq/onafriq-webhooks-api/) — Instant Payment Notification (IPN) webhooks delivered asynchronously to partner endpoints as transaction state changes — used in combination with the Async…
+- [Onafriq Contacts API](https://apis.io/apis/onafriq/onafriq-contacts-api/) — Contacts API for adding and retrieving customer (payer / payee) records used across Payins, Payouts, and reconciliation workflows on the Enterprise Platform.
+- [Baxi Agent Banking API](https://apis.io/apis/onafriq/baxi-agent-banking-api/) — Onafriq's Nigerian agent-banking platform (Baxi) exposes Virtual Account, Fingerprint (POS biometric activation), and Account Debit (cardless cash-out) APIs…
+- [Onafriq Card Issuance API](https://apis.io/apis/onafriq/onafriq-card-issuance-api/) — Card issuance and processing platform for partners launching physical and virtual prepaid card programs, including Visa virtual card creation, lifecycle…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Onafriq Domain Security](https://apis.io/security/onafriq/onafriq-domain-security/)
+- [Onafriq Trust Center](https://apis.io/security/onafriq/onafriq-trust-center/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://onafriq.com)
+- [Documentation](https://developer.mfsafrica.com)
+- [Blog](https://onafriq.com/insights)
+- [GitHub](https://github.com/mfsafrica)
+
+## API Evangelist rating
+
+**Kin Score 11.0** — emerging · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 62.5 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 21.4 |
+| Access clarity | 7.9 |
+
+**Agent readiness 0.0** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 9.8** — Payments
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/onafriq/](https://apis.io/providers/onafriq/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Onafriq: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/onafriq/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
